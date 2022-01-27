@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>larkin.ie</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>larkin.ie</title>
 </head>
 
 
 <header>
   <nav class='navbar'>
 
-      <div class="logo">
+    <div class="logo">
 
 
       <li>
-        <a href="https://github.com/eoinlarkin">Github</a>
-    </li>
+        <a href="#about">About</a>
+      </li>
 
-    <li>
-      <a href="#tours">Portfolio</a>
-  </li>
-  <li>
-      <a href="#book">Contact</a>
-  </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="https://github.com/eoinlarkin">GitHub</a>
+      </li>
 
 
 
@@ -34,22 +35,96 @@
 
 
 <body>
-<!-- ************ Floating Navbar ************ -->    
+  <!-- ************ Floating Navbar ************ -->
 
 
 
 
-      <!-- ************ Hero Image Container ************ -->    
-      <div class="hero-image">
-        <div class="hero-text">
-          <h1>Eoin Larkin</h1>
-          <p>code + statistics + tinkering</p>
-        </div>
+  <!-- ************ Hero Image Container ************ -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Eoin Larkin</h1>
+      <p>actuary + statistician</p>
+      <p id='hero-byline'>code, networking, automation, linux</p>
+    </div>
+  </div>
+
+  <!-- ************ About ************ -->
+  <div class="flex-container-about" id='about'>
+    <div class="flex-item-about">
+      <p>Flex 1</p>
+    </div>
+
+    <div class="flex-item-about logos">
+
+      <div class="container">
+        <div class="logo1"><img src="./assets/logos/python.png" alt="python logo"></div>
+        <div class="logo2"><img src="./assets/logos/javascript.png" alt="javascript logo"></div>
+        <div class="logo3"><img src="./assets/logos/r.png" alt="R logo"></div>
+        <div class="logo4"><img src="./assets/logos/stan.png" alt="stan logo"></div>
+        <div class="logo5"><img src="./assets/logos/docker.png" alt="docker logo"></div>
+        <div class="logo6"><img src="./assets/logos/linux.png" alt="linux logo"></div>
+        <div class="logo7"><img src="./assets/logos/python.png" alt="python logo"></div>
+        <div class="logo8"><img src="./assets/logos/python.png" alt="python logo"></div>
       </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- ************ Portfolio ************ -->
+  <section class='section-container' id='projects'>
+    <div class="flex-container-portfolio">
+      <div class="flex-item-portfolio">
+        <h1>Magic Square Game</h1>
+      </div>
+
+      <div class="flex-item-portfolio">
+        <h1>Py-Battleships</h1>
+      </div>
+
+      <div class="flex-item-portfolio">
+        <h1>Wicklow Walking Tours</h1>
+      </div>
+
+      <div class="flex-item-portfolio">
+        <h1>Covid 19 Modelling</h1>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <!-- Constructed through unordered links -->
+    <ul class="footer-links">
+        <li>
+            <a href="https://github.com/eoinlarkin" target="_blank" rel="noopener" 
+            aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </li>
+
+        <li>
+            <a href="https://www.linkedin.com/in/eoinlarkin/" target="_blank" rel="noopener" 
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+
+        <li>
+            <a href="https://www.instagram.com/eoinlarkin/" target="_blank" rel="noopener" 
+            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+
+    </ul>
+
+</footer>
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/d375cce442.js" crossorigin="anonymous"></script>
 
 
 
 </body>
+
 </html>
-
-

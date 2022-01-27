@@ -1,40 +1,33 @@
-
 :root {
   /* Defining colors as variables */
-  --color-green: #186355;
+  --color-green: #145247;
   --color-blue: #00478F;
   --color-purple: #484276;
   --color-black: #1C190D;
-  --color-white:#EBE9EC;
-    }
+  --color-white: #EBE9EC;
+}
 
 /* Clearning css and zeroing all margins, pads and borders */
 * {
   margin: 0px;
   padding: 0px;
-  border: none; 
+  border: none;
 }
 
 /* Setting default font size as 10px */
 html {
-  font-size: 62.5%; /* Set font size to 62.5% so that 1rem = 10px for initial designing (16px / 62.5 === 10) */
+  font-size: 62.5%;
+  /* Set font size to 62.5% so that 1rem = 10px for initial designing (16px / 62.5 === 10) */
   height: 100%;
   font-family: 'Roboto', sans-serif;
- }
+}
 
 body {
   background-color: var(--color-white);
   color: var(--color-black);
   height: 100%
-  }
+}
 
-  h1 {
-    font-size: 4rem;
-  }
-
-  p {
-    font-size: 2.5rem;
-  }
 
 
 
@@ -44,10 +37,15 @@ body {
 .navbar {
   overflow: hidden;
   background-color: var(--color-white);
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page *//* width */
-  width: 100%; /* Full width */
-  z-index: 999; /* Setting navbar to be always on top */
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  /* width */
+  width: 100%;
+  /* Full width */
+  z-index: 999;
+  /* Setting navbar to be always on top */
   line-height: 7.5vh;
 }
 
@@ -55,27 +53,62 @@ body {
 .logo {
   padding-left: 5vw;
   font-size: 2rem;
-  --float: right; /* Floating the parent element right */
-  color:var(--color-blue);
+  --float: right;
+  /* Floating the parent element right */
+  color: var(--color-blue);
 }
 
 .logo li {
-  float: left; /* Floating the links in order */
+  float: left;
+  /* Floating the links in order */
   list-style-type: none;
   margin-right: 2rem;
 }
 
 /* Targeting descendent links of the menu id */
-.logo a, .credits a{
-  text-decoration: none; /* removing the   for hyperlinks */
-  color: inherit; /* Links will inherit the color from the closest parent; in this case body */
-} 
+.logo a,
+.credits a {
+  text-decoration: none;
+  /* removing the   for hyperlinks */
+  color: inherit;
+  /* Links will inherit the color from the closest parent; in this case body */
+}
+
+/* mouse over link */
+.logo a:hover {
+  color: var(--color-green);
+}
+
+
+
+/* The hero image */
+.section-container{
+  background-color: yellow;
+  
+  /* Set a specific height */
+  height: 85vh;
+
+  /* Setting width */
+  width: 90vw;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Padding in order to respect viewport height */
+  margin-top: 7.5vh;
+  margin-bottom: 7.5vh;
+
+  justify-content: center;
+  display: flex;
+}
+
+
+
+
 
 /* The hero image */
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-  url(../images/map_trieste.png);
+  background-image: url(../images/map_trieste.png);
 
   /* Set a specific height */
   height: 85vh;
@@ -88,32 +121,198 @@ body {
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
-  --background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
   /* Padding in order to respect viewport height */
-  padding-top: 10vh;
+  margin-top: 7.5vh;
+  margin-bottom: 7.5vh;
 }
 
 /* Place text in the middle of the image */
 .hero-text {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 2%;
   color: var(--color-black);
-  font-family: 'Space Mono';;
-  width: 30rem;
+  font-family: 'Space Mono';
+  min-width: 32.5rem;
+  max-width: 40rem; 
   word-wrap:break-word;
 }
 
 .hero-text h1 {
   color: var(--color-green);
+  font-size: 4rem;
 }
 
 .hero-text p {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.hero-text #hero-byline {
   font-style: oblique;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  margin-top: 0.5rem;
+}
+
+
+/* **************************************************/
+/* Code for About                             */
+/* **************************************************/
+
+.logos img {
+  width: 75px;
+  height: 75px;
 }
 
 
 
+.flex-container-about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: yellow;
+  
+  /* Set a specific height */
+  height: 85vh;
+
+  /* Setting width */
+  width: 90vw;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Padding in order to respect viewport height */
+  margin-top: 7.5vh;
+  margin-bottom: 7.5vh;
+
+  
+}
+
+.flex-item-about:nth-child(1) {
+  order: 0;
+  flex: 0 1 400px;
+  border: 1px solid black;
+  justify-content: space-around;
+  display: flex;
+  height: 175px;
+  box-sizing: border-box;
+  gap: 20px 20px;
+}
+
+.flex-item-about:nth-child(2) {
+  order: 0;
+  flex: 0 1 400px;
+  align-self: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo1 logo2 logo3 logo4"
+    "logo5 logo6 logo7 logo8";
+}
+
+.logo1 { grid-area: logo1; }
+
+.logo2 { grid-area: logo2; }
+
+.logo3 { grid-area: logo3; }
+
+.logo4 { grid-area: logo4; }
+
+.logo5 { grid-area: logo5; }
+
+.logo6 { grid-area: logo6; }
+
+.logo7 { grid-area: logo7; }
+
+.logo8 { grid-area: logo8; }
+
+
+
+
+
+/* **************************************************/
+/* Code for Portfolio                             */
+/* **************************************************/
+
+
+
+.flex-container-portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  gap: 20px 20px;
+}
+
+.flex-item-portfolio:nth-child(1) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  border: 1px solid black;
+  min-width: 15rem;
+}
+
+.flex-item-portfolio:nth-child(2) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  border: 1px solid black;
+  min-width: 15rem;
+}
+
+.flex-item-portfolio:nth-child(3) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  border: 1px solid black;
+  min-width: 15rem;
+}
+
+.flex-item-portfolio:nth-child(4) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  border: 1px solid black;
+  min-width: 15rem;
+}
+
+
+/* **************************************** */
+/* Footer Element                           */
+/* **************************************** */
+.footer-links {
+  text-align: center;
+}
+
+.footer-links > li {
+  display: inline; /* Setting the display to inline for the list elements */
+   }
+
+
+/* Footer Elements - font */
+.footer-links i {
+  font-size: 4rem;
+  color: var(--color-blue);
+  margin: 1%;
+  padding: 2%;
+}
