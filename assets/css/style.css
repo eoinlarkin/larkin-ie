@@ -83,7 +83,6 @@ body {
 
 /* The hero image */
 .section-container{
-  background-color: yellow;
   
   /* Set a specific height */
   height: 85vh;
@@ -178,7 +177,6 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: yellow;
   
   /* Set a specific height */
   height: 85vh;
@@ -193,6 +191,7 @@ body {
   margin-top: 7.5vh;
   margin-bottom: 7.5vh;
 
+  gap: 20px 20px;
   
 }
 
@@ -201,10 +200,11 @@ body {
   flex: 0 1 400px;
   border: 1px solid black;
   justify-content: space-around;
+  align-items: center;
   display: flex;
-  height: 175px;
+  height: 400px;
   box-sizing: border-box;
-  gap: 20px 20px;
+  font-size: 1.5rem;
 }
 
 .flex-item-about:nth-child(2) {
@@ -213,6 +213,10 @@ body {
   align-self: center;
   border: 1px solid black;
   box-sizing: border-box;
+  height: 400px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -316,3 +320,7 @@ body {
   margin: 1%;
   padding: 2%;
 }
+
+.footer-links i:hover {
+  color: var(--color-purple); 
+   }
