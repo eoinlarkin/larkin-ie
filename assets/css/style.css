@@ -1,443 +1,462 @@
 :root {
-  /* Defining colors as variables */
-  --color-green: #145247;
-  --color-blue: #00478F;
-  --color-purple: #484276;
-  --color-black: #1C190D;
-  --color-white: #EBE9EC;
+    /* Defining colors as variables */
+    --color-green: #145247;
+    --color-blue: #00478F;
+    --color-purple: #484276;
+    --color-black: #1C190D;
+    --color-white: #EBE9EC;
 }
+
 
 /* Clearning css and zeroing all margins, pads and borders */
+
 * {
-  margin: 0px;
-  padding: 0px;
-  border: none;
+    margin: 0px;
+    padding: 0px;
+    border: none;
 }
 
+
 /* Setting default font size as 10px */
+
 html {
-  font-size: 62.5%;
-  /* Set font size to 62.5% so that 1rem = 10px for initial designing (16px / 62.5 === 10) */
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    /* Set font size to 62.5% so that 1rem = 10px for initial designing (16px / 62.5 === 10) */
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background-color: var(--color-white);
-  color: var(--color-black);
-  height: 100%
+    background-color: var(--color-white);
+    color: var(--color-black);
+    height: 100%
 }
 
 
-
-
 /* **************************************************/
+
+
 /* Code for Navbar                                  */
+
+
 /* **************************************************/
+
 .navbar {
-  overflow: hidden;
-  background-color: var(--color-white);
-  position: fixed;
-  /* Set the navbar to fixed position */
-  top: 0;
-  /* Position the navbar at the top of the page */
-  /* width */
-  width: 100%;
-  /* Full width */
-  z-index: 999;
-  /* Setting navbar to be always on top */
-  line-height: 7.5vh;
+    overflow: hidden;
+    background-color: var(--color-white);
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    /* width */
+    width: 100%;
+    /* Full width */
+    z-index: 999;
+    /* Setting navbar to be always on top */
+    line-height: 7.5vh;
 }
+
 
 /* main menu navigation links */
+
 .logo {
-  padding-left: 12.5vw;
-  font-size: 2rem;
-  --float: right;
-  /* Floating the parent element right */
-  color: var(--color-blue);
+    padding-left: 12.5vw;
+    font-size: 2rem;
+    --float: right;
+    /* Floating the parent element right */
+    color: var(--color-blue);
 }
 
 .logo li {
-  float: left;
-  /* Floating the links in order */
-  list-style-type: none;
-  margin-right: 2rem;
+    float: left;
+    /* Floating the links in order */
+    list-style-type: none;
+    margin-right: 2rem;
 }
+
 
 /* Targeting descendent links of the menu id */
+
 .logo a,
 .credits a {
-  text-decoration: none;
-  /* removing the   for hyperlinks */
-  color: inherit;
-  /* Links will inherit the color from the closest parent; in this case body */
+    text-decoration: none;
+    /* removing the   for hyperlinks */
+    color: inherit;
+    /* Links will inherit the color from the closest parent; in this case body */
 }
 
+
 /* mouse over link */
+
 .logo a:hover {
-  color: var(--color-green);
+    color: var(--color-green);
 }
 
 
 /* The hero image */
+
 .section-container {
-  height: 85vh; /* Set a specific height */
-  width: 75vw; /* Setting width */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7.5vh;
-  margin-bottom: 7.5vh;
-  justify-content: center;
-  display: flex;
+    height: 85vh;
+    /* Set a specific height */
+    width: 75vw;
+    /* Setting width */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+    justify-content: center;
+    display: flex;
 }
 
 .portfolio-container {
-  height: 70vh;
+    height: 70vh;
 }
 
+
 /* The hero image */
+
 .hero-image {
-  margin-left: auto;
-  margin-right: auto;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-  /* Padding in order to respect viewport height */
-  margin-top: 7.5vh;
-  margin-bottom: 7.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* Padding in order to respect viewport height */
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
 }
 
 .hero-trieste {
-  background-image: url(../images/heroimage/map-trieste.png);
-  height: 85vh;
-  /* Set a specific height */
-  width: 90vw;
-  /* Setting width */
+    background-image: url(../images/heroimage/map-trieste.png);
+    height: 85vh;
+    /* Set a specific height */
+    width: 90vw;
+    /* Setting width */
 }
 
 .hero-galway {
-  background-image: url(../images/heroimage/map-galway.png);
-  height: 85vh;
-  /* Set a specific height */
-  width: 90vw;
-  /* Setting width */
+    background-image: url(../images/heroimage/map-galway.png);
+    height: 85vh;
+    /* Set a specific height */
+    width: 90vw;
+    /* Setting width */
 }
 
 .hero-dublin {
-  background-image: url(../images/heroimage/map-dublin.png);
-  height: 85vh;
-  /* Set a specific height */
-  width: 90vw;
-  /* Setting width */
+    background-image: url(../images/heroimage/map-dublin.png);
+    height: 85vh;
+    /* Set a specific height */
+    width: 90vw;
+    /* Setting width */
 }
 
+
 /* Place text in the middle of the image */
+
 .hero-text {
-  position: absolute;
-  top: 75%;
-  left: 7.5vw;
-  color: var(--color-black);
-  font-family: 'Space Mono';
-  min-width: 32.5rem;
-  max-width: 40rem;
-  word-wrap: break-word;
+    position: absolute;
+    top: 75%;
+    left: 7.5vw;
+    color: var(--color-black);
+    font-family: 'Space Mono';
+    min-width: 32.5rem;
+    max-width: 40rem;
+    word-wrap: break-word;
 }
 
 .hero-text h1 {
-  color: var(--color-green);
-  font-size: 4rem;
+    color: var(--color-green);
+    font-size: 4rem;
 }
 
 .hero-text p {
-  font-size: 2.25rem;
-  line-height: 2.25rem;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
 }
 
 .hero-text #hero-byline {
-  font-style: oblique;
-  font-size: 1.75rem;
-  line-height: 1.75rem;
-  margin-top: 0.5rem;
+    font-style: oblique;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    margin-top: 0.5rem;
 }
 
 
 /* **************************************************/
+
+
 /* Code for About                             */
+
+
 /* **************************************************/
 
 .logos img {
-  width: 75px;
-  height: 75px;
+    width: 75px;
+    height: 75px;
 }
-
 
 .flex-container-about {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  align-content: center;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 90vh;
-  /* Set a specific height */
-  width: 75vw;
-  /* Setting width */
-
-  margin-left: auto;
-  margin-right: auto;
-
-  /* Padding in order to respect viewport height */
-  margin-top: 7.5vh;
-  margin-bottom: 7.5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    /* Set a specific height */
+    width: 75vw;
+    /* Setting width */
+    margin-left: auto;
+    margin-right: auto;
+    /* Padding in order to respect viewport height */
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
 }
 
-
 .flex-item-about:nth-child(1) {
-  order: 0;
-  flex: 0 1 35vw;
-  border-top: 0.5rem solid var(--color-blue);
-  border-left: 0.5rem solid var(--color-blue);
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
-  height: 45vh;
-  font-size: 1.5rem;
-  padding: 1rem;
-  box-sizing: border-box;
+    order: 0;
+    flex: 0 1 35vw;
+    border-top: 0.5rem solid var(--color-blue);
+    border-left: 0.5rem solid var(--color-blue);
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    height: 45vh;
+    font-size: 1.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .flex-item-about:nth-child(2) {
-  order: 0;
-  flex: 0 1 35vw;
-  border-bottom: 0.5rem solid var(--color-blue);
-  border-right: 0.5rem solid var(--color-blue);
-  align-self: center;
-  box-sizing: border-box;
-  height: 45vh;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  box-sizing: border-box;
+    order: 0;
+    flex: 0 1 35vw;
+    border-bottom: 0.5rem solid var(--color-blue);
+    border-right: 0.5rem solid var(--color-blue);
+    align-self: center;
+    box-sizing: border-box;
+    height: 45vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 40px 40px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "logo1 logo2 logo3 logo4"
-    "logo5 logo6 logo7 logo8";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 40px;
+    grid-auto-flow: row;
+    grid-template-areas: "logo1 logo2 logo3 logo4" "logo5 logo6 logo7 logo8";
 }
 
 .logo1 {
-  grid-area: logo1;
+    grid-area: logo1;
 }
 
 .logo2 {
-  grid-area: logo2;
+    grid-area: logo2;
 }
 
 .logo3 {
-  grid-area: logo3;
+    grid-area: logo3;
 }
 
 .logo4 {
-  grid-area: logo4;
+    grid-area: logo4;
 }
 
 .logo5 {
-  grid-area: logo5;
+    grid-area: logo5;
 }
 
 .logo6 {
-  grid-area: logo6;
+    grid-area: logo6;
 }
 
 .logo7 {
-  grid-area: logo7;
+    grid-area: logo7;
 }
 
 .logo8 {
-  grid-area: logo8;
+    grid-area: logo8;
 }
 
 
 /* **************************************************/
+
+
 /* Code for Portfolio                             */
+
+
 /* **************************************************/
+
 .flex-container-portfolio {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  gap: 40px 40px;
-  width: 75vw;
-  box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 40px 40px;
+    width: 75vw;
+    box-sizing: border-box;
 }
 
 .flex-item-portfolio:nth-child(1) {
-  order: 0;
-  flex: 0 1 35vw;
-  align-self: auto;
-  border-left: 0.5rem solid var(--color-green);
-  border-top: 0.5rem solid var(--color-green);
-  padding: 1rem;
-  box-sizing: border-box;
+    order: 0;
+    flex: 0 1 35vw;
+    align-self: auto;
+    border-left: 0.5rem solid var(--color-green);
+    border-top: 0.5rem solid var(--color-green);
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .flex-item-portfolio:nth-child(2) {
-  order: 0;
-  flex: 0 1 35vw;
-  align-self: auto;
-  border-left: 0.5rem solid var(--color-green);
-  border-top: 0.5rem solid var(--color-green);
-  padding: 1rem;
-  box-sizing: border-box;
+    order: 0;
+    flex: 0 1 35vw;
+    align-self: auto;
+    border-left: 0.5rem solid var(--color-green);
+    border-top: 0.5rem solid var(--color-green);
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .flex-item-portfolio:nth-child(3) {
-  order: 0;
-  flex: 0 1 35vw;
-  align-self: auto;
-  align-self: auto;
-  border-left: 0.5rem solid var(--color-green);
-  border-bottom: 0.5rem solid var(--color-green);
-  padding: 1rem;
-  box-sizing: border-box;
+    order: 0;
+    flex: 0 1 35vw;
+    align-self: auto;
+    align-self: auto;
+    border-left: 0.5rem solid var(--color-green);
+    border-bottom: 0.5rem solid var(--color-green);
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .flex-item-portfolio:nth-child(4) {
-  order: 0;
-  flex: 0 1 35vw;
-  align-self: auto;
-  border-left: 0.5rem solid var(--color-green);
-  border-bottom: 0.5rem solid var(--color-green);
-  padding: 1rem;
-  box-sizing: border-box;
+    order: 0;
+    flex: 0 1 35vw;
+    align-self: auto;
+    border-left: 0.5rem solid var(--color-green);
+    border-bottom: 0.5rem solid var(--color-green);
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .flex-item-portfolio img {
-  height: 20vh;
-
-  display: block;
+    height: 20vh;
+    display: block;
 }
 
 .img-left {
-  float: left;
-  padding: 0rem 0.5rem 0rem 0;
+    float: left;
+    padding: 0rem 0.5rem 0rem 0;
 }
 
 .img-right {
-  float: right;
-  padding: 0rem 0rem 0rem 0.5rem;
+    float: right;
+    padding: 0rem 0rem 0rem 0.5rem;
 }
 
-
 .blue-gradient {
-  background: linear-gradient(0deg, rgba(0, 71, 143, 0.15), rgba(0, 71, 143, 0.15));
-  padding: 0.5rem 0rem 0.5rem 0;
-  background-clip: content-box;
+    background: linear-gradient(0deg, rgba(0, 71, 143, 0.15), rgba(0, 71, 143, 0.15));
+    padding: 0.5rem 0rem 0.5rem 0;
+    background-clip: content-box;
 }
 
 .flex-item-portfolio h1 {
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  font-size: 2rem;
-  padding: 0.5rem;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    font-size: 2rem;
+    padding: 0.5rem;
 }
 
 .flex-item-portfolio span {
-  height: 20vh;
-  display: table-cell;
-  vertical-align: middle;
+    height: 20vh;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .portfolio-images {
-  background-repeat: no-repeat;
-  height: 20vh;
-  width: 20vh;
-  display: block;
-  /* Optional for a gradual animation effect */
-  transition: 0.2s;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 20vh;
+    display: block;
+    /* Optional for a gradual animation effect */
+    transition: 0.2s;
 }
 
-
 #msg {
-  background: url('../../assets/images/portfolio/p-msg-200px-blend.png');
-  background-size: 20vh 20vh;
+    background: url('../../assets/images/portfolio/p-msg-200px-blend.png');
+    background-size: 20vh 20vh;
 }
 
 #msg:hover {
-  background: url('../../assets/images/portfolio/p-msg-200px.png');
-  background-size: 20vh 20vh;
+    background: url('../../assets/images/portfolio/p-msg-200px.png');
+    background-size: 20vh 20vh;
 }
 
-
 #wwt {
-  background: url('../../assets/images/portfolio/p-wwt-200px-blend.png');
-  background-size: 20vh 20vh;
-
+    background: url('../../assets/images/portfolio/p-wwt-200px-blend.png');
+    background-size: 20vh 20vh;
 }
 
 #wwt:hover {
-  background: url('../../assets/images/portfolio/p-wwt-200px.png');
-  background-size: 20vh 20vh;
+    background: url('../../assets/images/portfolio/p-wwt-200px.png');
+    background-size: 20vh 20vh;
 }
 
-
 #battleships {
-  background: url('../../assets/images/portfolio/p-battleships-200px-blend.png');
-  background-size: 20vh 20vh;
-
+    background: url('../../assets/images/portfolio/p-battleships-200px-blend.png');
+    background-size: 20vh 20vh;
 }
 
 #battleships:hover {
-  background: url('../../assets/images/portfolio/p-battleships-200px.png');
-  background-size: 20vh 20vh;
+    background: url('../../assets/images/portfolio/p-battleships-200px.png');
+    background-size: 20vh 20vh;
 }
 
 #lego {
-  background: url('../../assets/images/portfolio/p-lego-200px-blend.png');
-  background-size: 20vh 20vh;
+    background: url('../../assets/images/portfolio/p-lego-200px-blend.png');
+    background-size: 20vh 20vh;
 }
 
 #lego:hover {
-  background: url('../../assets/images/portfolio/p-lego-200px.png');
-  background-size: 20vh 20vh;
+    background: url('../../assets/images/portfolio/p-lego-200px.png');
+    background-size: 20vh 20vh;
 }
 
+
 /* **************************************** */
+
+
 /* Footer Element                           */
+
+
 /* **************************************** */
+
 .footer-links {
-  text-align: center;
+    text-align: center;
 }
 
 .footer-links>li {
-  display: inline;
-  /* Setting the display to inline for the list elements */
+    display: inline;
+    /* Setting the display to inline for the list elements */
 }
 
 
 /* Footer Elements - font */
+
 .footer-links i {
-  font-size: 4rem;
-  color: var(--color-blue);
-  padding: 0% 2.5% 2% 2.5%;
+    font-size: 4rem;
+    color: var(--color-blue);
+    padding: 0% 2.5% 2% 2.5%;
 }
 
 .footer-links i:hover {
-  color: var(--color-purple);
+    color: var(--color-purple);
 }
