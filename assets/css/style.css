@@ -8,8 +8,7 @@
 }
 
 
-/* Clearning css and zeroing all margins, pads and borders */
-
+/* Clearing css and zeroing all margins, pads and borders */
 * {
     margin: 0px;
     padding: 0px;
@@ -18,7 +17,6 @@
 
 
 /* Setting default font size as 10px */
-
 html {
     font-size: 62.5%;
     /* Set font size to 62.5% so that 1rem = 10px for initial designing (16px / 62.5 === 10) */
@@ -34,7 +32,6 @@ body {
 
 
 /* Code for Navbar                                  */
-
 .navbar {
     overflow: hidden;
     background-color: var(--color-white);
@@ -52,7 +49,6 @@ body {
 
 
 /* main menu navigation links */
-
 .logo {
     padding-left: 12.5vw;
     font-size: 2rem;
@@ -70,7 +66,6 @@ body {
 
 
 /* Targeting descendent links of the menu id */
-
 .logo a,
 .credits a {
     text-decoration: none;
@@ -81,14 +76,12 @@ body {
 
 
 /* mouse over link */
-
 .logo a:hover {
     color: var(--color-green);
 }
 
 
 /* The hero image */
-
 .section-container {
     height: 85vh;
     /* Set a specific height */
@@ -108,7 +101,6 @@ body {
 
 
 /* The hero image */
-
 .hero-image {
     margin-left: auto;
     margin-right: auto;
@@ -148,7 +140,6 @@ body {
 
 
 /* Place text in the middle of the image */
-
 .hero-text {
     position: absolute;
     top: 80%;
@@ -179,13 +170,8 @@ body {
 
 
 /* **************************************************/
-
-
 /* Code for About                             */
-
-
 /* **************************************************/
-
 .logos img {
     width: 75px;
     height: 75px;
@@ -278,13 +264,8 @@ body {
 
 
 /* **************************************************/
-
-
 /* Code for Portfolio                             */
-
-
 /* **************************************************/
-
 .flex-container-portfolio {
     display: flex;
     flex-direction: row;
@@ -428,13 +409,8 @@ body {
 
 
 /* **************************************** */
-
-
 /* Footer Element                           */
-
-
 /* **************************************** */
-
 .footer-links {
     text-align: center;
 }
@@ -446,7 +422,6 @@ body {
 
 
 /* Footer Elements - font */
-
 .footer-links i {
     font-size: 4rem;
     color: var(--color-blue);
