@@ -342,7 +342,7 @@ body {
 
 .flex-item-portfolio h1 {
   color: var(--color-white);
-  background-color: var(--color-purple);
+  background-color: var(--color-blue);
   font-size: 2rem;
   padding: 0.5rem;
 }
@@ -353,6 +353,55 @@ body {
   vertical-align: middle;
 }
 
+.portfolio-images {
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 20vh;
+  display: block;
+  /* Optional for a gradual animation effect */
+  transition: 0.2s;
+}
+
+
+#msg { 
+  background: url('../../assets/images/p-msg-200px-blend.png');
+  background-size: 20vh 20vh;
+}
+#msg:hover { 
+  background: url('../../assets/images/p-msg-200px.png');
+  background-size: 20vh 20vh;
+}
+
+
+#wwt { 
+  background: url('../../assets/images/p-wwt-200px-blend.png');
+  background-size: 20vh 20vh;
+
+}
+#wwt:hover { 
+  background: url('../../assets/images/p-wwt-200px.png');
+  background-size: 20vh 20vh;
+}
+
+
+#battleships { 
+  background: url('../../assets/images/p-battleships-200px-blend.png');
+  background-size: 20vh 20vh;
+
+}
+#battleships:hover { 
+  background: url('../../assets/images/p-battleships-200px.png');
+  background-size: 20vh 20vh;
+}
+
+#lego { 
+  background: url('../../assets/images/p-lego-200px-blend.png');
+  background-size: 20vh 20vh;
+}
+#lego:hover { 
+  background: url('../../assets/images/p-lego-200px.png');
+  background-size: 20vh 20vh;
+}
 
 /* **************************************** */
 /* Footer Element                           */
