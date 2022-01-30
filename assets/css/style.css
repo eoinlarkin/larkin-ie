@@ -51,7 +51,7 @@ body {
 
 /* main menu navigation links */
 .logo {
-  padding-left: 5vw;
+  padding-left: 12.5vw;
   font-size: 2rem;
   --float: right;
   /* Floating the parent element right */
@@ -80,23 +80,14 @@ body {
 }
 
 
-
 /* The hero image */
-.section-container{
-  
-  /* Set a specific height */
-  height: 85vh;
-
-  /* Setting width */
-  width: 90vw;
-
+.section-container {
+  height: 85vh; /* Set a specific height */
+  width: 75vw; /* Setting width */
   margin-left: auto;
   margin-right: auto;
-
-  /* Padding in order to respect viewport height */
   margin-top: 7.5vh;
   margin-bottom: 7.5vh;
-
   justify-content: center;
   display: flex;
 }
@@ -123,32 +114,38 @@ body {
 
 .hero-trieste {
   background-image: url(../images/heroimage/map-trieste.png);
-  height: 85vh;/* Set a specific height */
-  width: 90vw; /* Setting width */
+  height: 85vh;
+  /* Set a specific height */
+  width: 90vw;
+  /* Setting width */
 }
 
 .hero-galway {
   background-image: url(../images/heroimage/map-galway.png);
-  height: 85vh;/* Set a specific height */
-  width: 90vw; /* Setting width */
+  height: 85vh;
+  /* Set a specific height */
+  width: 90vw;
+  /* Setting width */
 }
 
 .hero-dublin {
   background-image: url(../images/heroimage/map-dublin.png);
-  height: 85vh;/* Set a specific height */
-  width: 90vw; /* Setting width */
+  height: 85vh;
+  /* Set a specific height */
+  width: 90vw;
+  /* Setting width */
 }
 
 /* Place text in the middle of the image */
 .hero-text {
   position: absolute;
   top: 75%;
-  left: 2%;
+  left: 7.5vw;
   color: var(--color-black);
   font-family: 'Space Mono';
   min-width: 32.5rem;
-  max-width: 40rem; 
-  word-wrap:break-word;
+  max-width: 40rem;
+  word-wrap: break-word;
 }
 
 .hero-text h1 {
@@ -183,15 +180,15 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+
   align-content: center;
   align-items: center;
-  
-  /* Set a specific height */
-  height: 90vh;
+  justify-content: space-between;
 
+  height: 90vh;
+  /* Set a specific height */
+  width: 75vw;
   /* Setting width */
-  width: 90vw;
 
   margin-left: auto;
   margin-right: auto;
@@ -199,8 +196,6 @@ body {
   /* Padding in order to respect viewport height */
   margin-top: 7.5vh;
   margin-bottom: 7.5vh;
-
-  gap: 40px 40px;
 }
 
 
@@ -233,10 +228,8 @@ body {
   box-sizing: border-box;
 }
 
-
-
-
-.container {  display: grid;
+.container {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 40px 40px;
@@ -246,41 +239,51 @@ body {
     "logo5 logo6 logo7 logo8";
 }
 
-.logo1 { grid-area: logo1; }
+.logo1 {
+  grid-area: logo1;
+}
 
-.logo2 { grid-area: logo2; }
+.logo2 {
+  grid-area: logo2;
+}
 
-.logo3 { grid-area: logo3; }
+.logo3 {
+  grid-area: logo3;
+}
 
-.logo4 { grid-area: logo4; }
+.logo4 {
+  grid-area: logo4;
+}
 
-.logo5 { grid-area: logo5; }
+.logo5 {
+  grid-area: logo5;
+}
 
-.logo6 { grid-area: logo6; }
+.logo6 {
+  grid-area: logo6;
+}
 
-.logo7 { grid-area: logo7; }
+.logo7 {
+  grid-area: logo7;
+}
 
-.logo8 { grid-area: logo8; }
-
-
-
+.logo8 {
+  grid-area: logo8;
+}
 
 
 /* **************************************************/
 /* Code for Portfolio                             */
 /* **************************************************/
-
-
-
 .flex-container-portfolio {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
   gap: 40px 40px;
-  width: 90vw;
+  width: 75vw;
   box-sizing: border-box;
 }
 
@@ -327,7 +330,7 @@ body {
 
 .flex-item-portfolio img {
   height: 20vh;
-  
+
   display: block;
 }
 
@@ -343,7 +346,7 @@ body {
 
 
 .blue-gradient {
-  background:linear-gradient(0deg, rgba(0, 71, 143, 0.15), rgba(0, 71, 143, 0.15));
+  background: linear-gradient(0deg, rgba(0, 71, 143, 0.15), rgba(0, 71, 143, 0.15));
   padding: 0.5rem 0rem 0.5rem 0;
   background-clip: content-box;
 }
@@ -356,7 +359,7 @@ body {
 }
 
 .flex-item-portfolio span {
-  height: 20vh;            
+  height: 20vh;
   display: table-cell;
   vertical-align: middle;
 }
@@ -371,42 +374,46 @@ body {
 }
 
 
-#msg { 
+#msg {
   background: url('../../assets/images/p-msg-200px-blend.png');
   background-size: 20vh 20vh;
 }
-#msg:hover { 
+
+#msg:hover {
   background: url('../../assets/images/p-msg-200px.png');
   background-size: 20vh 20vh;
 }
 
 
-#wwt { 
+#wwt {
   background: url('../../assets/images/p-wwt-200px-blend.png');
   background-size: 20vh 20vh;
 
 }
-#wwt:hover { 
+
+#wwt:hover {
   background: url('../../assets/images/p-wwt-200px.png');
   background-size: 20vh 20vh;
 }
 
 
-#battleships { 
+#battleships {
   background: url('../../assets/images/p-battleships-200px-blend.png');
   background-size: 20vh 20vh;
 
 }
-#battleships:hover { 
+
+#battleships:hover {
   background: url('../../assets/images/p-battleships-200px.png');
   background-size: 20vh 20vh;
 }
 
-#lego { 
+#lego {
   background: url('../../assets/images/p-lego-200px-blend.png');
   background-size: 20vh 20vh;
 }
-#lego:hover { 
+
+#lego:hover {
   background: url('../../assets/images/p-lego-200px.png');
   background-size: 20vh 20vh;
 }
@@ -418,9 +425,10 @@ body {
   text-align: center;
 }
 
-.footer-links > li {
-  display: inline; /* Setting the display to inline for the list elements */
-   }
+.footer-links>li {
+  display: inline;
+  /* Setting the display to inline for the list elements */
+}
 
 
 /* Footer Elements - font */
@@ -431,7 +439,5 @@ body {
 }
 
 .footer-links i:hover {
-  color: var(--color-purple); 
-   }
-
-
+  color: var(--color-purple);
+}
