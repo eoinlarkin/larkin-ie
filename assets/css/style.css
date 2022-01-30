@@ -375,46 +375,46 @@ body {
 
 
 #msg {
-  background: url('../../assets/images/p-msg-200px-blend.png');
+  background: url('../../assets/images/portfolio/p-msg-200px-blend.png');
   background-size: 20vh 20vh;
 }
 
 #msg:hover {
-  background: url('../../assets/images/p-msg-200px.png');
+  background: url('../../assets/images/portfolio/p-msg-200px.png');
   background-size: 20vh 20vh;
 }
 
 
 #wwt {
-  background: url('../../assets/images/p-wwt-200px-blend.png');
+  background: url('../../assets/images/portfolio/p-wwt-200px-blend.png');
   background-size: 20vh 20vh;
 
 }
 
 #wwt:hover {
-  background: url('../../assets/images/p-wwt-200px.png');
+  background: url('../../assets/images/portfolio/p-wwt-200px.png');
   background-size: 20vh 20vh;
 }
 
 
 #battleships {
-  background: url('../../assets/images/p-battleships-200px-blend.png');
+  background: url('../../assets/images/portfolio/p-battleships-200px-blend.png');
   background-size: 20vh 20vh;
 
 }
 
 #battleships:hover {
-  background: url('../../assets/images/p-battleships-200px.png');
+  background: url('../../assets/images/portfolio/p-battleships-200px.png');
   background-size: 20vh 20vh;
 }
 
 #lego {
-  background: url('../../assets/images/p-lego-200px-blend.png');
+  background: url('../../assets/images/portfolio/p-lego-200px-blend.png');
   background-size: 20vh 20vh;
 }
 
 #lego:hover {
-  background: url('../../assets/images/p-lego-200px.png');
+  background: url('../../assets/images/portfolio/p-lego-200px.png');
   background-size: 20vh 20vh;
 }
 
