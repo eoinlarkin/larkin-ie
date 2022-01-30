@@ -105,18 +105,8 @@ body {
   height: 70vh;
 }
 
-
-
 /* The hero image */
 .hero-image {
-  background-image: url(../images/map_trieste.png);
-
-  /* Set a specific height */
-  height: 85vh;
-
-  /* Setting width */
-  width: 90vw;
-
   margin-left: auto;
   margin-right: auto;
 
@@ -129,6 +119,24 @@ body {
   /* Padding in order to respect viewport height */
   margin-top: 7.5vh;
   margin-bottom: 7.5vh;
+}
+
+.hero-trieste {
+  background-image: url(../images/heroimage/map-trieste.png);
+  height: 85vh;/* Set a specific height */
+  width: 90vw; /* Setting width */
+}
+
+.hero-galway {
+  background-image: url(../images/heroimage/map-galway.png);
+  height: 85vh;/* Set a specific height */
+  width: 90vw; /* Setting width */
+}
+
+.hero-dublin {
+  background-image: url(../images/heroimage/map-dublin.png);
+  height: 85vh;/* Set a specific height */
+  width: 90vw; /* Setting width */
 }
 
 /* Place text in the middle of the image */

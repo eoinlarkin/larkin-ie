@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <title>larkin.ie</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 
@@ -42,7 +43,7 @@
 
 
   <!-- ************ Hero Image Container ************ -->
-  <div class="hero-image">
+  <div id='hero-image' class="hero-image">
     <div class="hero-text">
       <h1>Eoin Larkin</h1>
       <p>actuary + statistician</p>
@@ -175,5 +176,11 @@
 
 
 </body>
+
+<script> 
+  var images = ['hero-trieste', 'hero-dublin', 'hero-galway'];
+   
+  $('#hero-image').addClass(images[Math.floor(Math.random() * images.length)]);
+  </script>
 
 </html>
