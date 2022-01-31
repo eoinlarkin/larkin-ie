@@ -33,6 +33,7 @@ body {
 p {
     font-size: 1.75rem;
     color: var(--color-black);
+    padding-left: 0.5rem;
 }
 
 p > a {
@@ -92,10 +93,6 @@ p > a {
     display: flex;
 }
 
---.portfolio-container {
-    height: 70vh;
-}
-
 
 /* The hero image */
 .hero-image {
@@ -108,7 +105,6 @@ p > a {
     position: relative;
     /* Padding in order to respect viewport height */
     margin-top: 7.5vh;
-    --margin-bottom: 7.5vh;
 }
 
 .hero-trieste {
@@ -218,10 +214,7 @@ p > a {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 4rem 4rem;
-    grid-auto-flow: row;
     grid-template-areas: "logo1 logo2 logo3 logo4""logo5 logo6 logo7 logo8";
 }
 
@@ -364,6 +357,10 @@ p > a {
     padding: 0.5rem;
 }
 
+.flex-item-portfolio p {
+    font-size: 1.75rem;
+}
+
 .flex-item-portfolio span {
     height: 22.5vh;
     display: table-cell;
@@ -380,42 +377,42 @@ p > a {
 }
 
 #msg {
-    background: url('../../assets/images/portfolio/p-msg-200px-blend.png');
+    background: url('../../assets/images/portfolio/p-msg-200px-blend.png') no-repeat;
     background-size: 22.5vh 22.5vh;
 }
 
 #msg:hover {
-    background: url('../../assets/images/portfolio/p-msg-200px.png');
+    background: url('../../assets/images/portfolio/p-msg-200px.png') no-repeat;
     background-size: 22.5vh 22.5vh;
 }
 
 #wwt {
-    background: url('../../assets/images/portfolio/p-wwt-200px-blend.png');
+    background: url('../../assets/images/portfolio/p-wwt-200px-blend.png') no-repeat center;
     background-size: 22.5vh 22.5vh;
 }
 
 #wwt:hover {
-    background: url('../../assets/images/portfolio/p-wwt-200px.png');
+    background: url('../../assets/images/portfolio/p-wwt-200px.png') no-repeat center;
     background-size: 22.5vh 22.5vh;
 }
 
 #battleships {
-    background: url('../../assets/images/portfolio/p-battleships-200px-blend.png');
+    background: url('../../assets/images/portfolio/p-battleships-200px-blend.png') no-repeat center;
     background-size: 22.5vh 22.5vh;
 }
 
 #battleships:hover {
-    background: url('../../assets/images/portfolio/p-battleships-200px.png');
+    background: url('../../assets/images/portfolio/p-battleships-200px.png') no-repeat center;
     background-size: 22.5vh 22.5vh;
 }
 
 #lego {
-    background: url('../../assets/images/portfolio/p-lego-200px-blend.png');
+    background: url('../../assets/images/portfolio/p-lego-200px-blend.png') no-repeat center;
     background-size: 22.5vh 22.5vh;
 }
 
 #lego:hover {
-    background: url('../../assets/images/portfolio/p-lego-200px.png');
+    background: url('../../assets/images/portfolio/p-lego-200px.png') no-repeat center;
     background-size: 22.5vh 22.5vh;
 }
 
@@ -450,10 +447,29 @@ p > a {
 /* **************************************** */
 
 
+@media screen and (max-width: 1200px) {
+.flex-item-portfolio p {
+    font-size: 1.5rem;
+}
 
-@media screen and (max-width: 1000px) {
+#msg, #msg:hover,#wwt,#wwt:hover ,#battleships, #battleships:hover, #lego, #lego:hover {
+    background-size: 20vh 20vh;
+  }
+
+  .flex-item-portfolio span {
+    height: 20vh;
+}
+
+.portfolio-images {
+    height: 20vh;
+    width: 20vh;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
         .flex-container-portfolio {
-            height: 135vh !important;
+            height: auto !important;
             margin-top: 0;
             margin-bottom: 0;
         }
@@ -468,8 +484,78 @@ p > a {
 
         .flex-item-about {
             min-width: 100% !important;
-            height: 35% !important;
+            height: 45% !important;
           }
+
+
 }
 
-    
+
+@media screen and (max-width: 600px) {
+    .flex-item-about {
+        min-width: 100% !important;
+        height: 45% !important;  
+      }
+
+      .flex-item-about > p {
+        font-size: 1.5rem;          
+      }
+
+      .logos img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .container {
+        gap: 2rem 2rem;
+    }    
+
+  }
+
+
+  @media screen and (max-width: 450px) {
+
+  .container {
+    gap: 1rem 2rem;
+    grid-template-areas: 
+    "logo1 logo2"
+    "logo3 logo4"
+    "logo5 logo6"
+    "logo7 logo8"!important;
+}
+
+.logos img {
+    width: 60px;
+    height: 60px;
+}
+
+.portfolio-images {
+    width: 15rem;
+    height: 15rem;
+}
+
+.img-left, .img-right{
+    float: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.flex-item-portfolio:nth-child(n) {
+    height:auto;
+}
+
+.flex-item-portfolio span {
+    height:auto;
+}
+
+#msg, #msg:hover,#wwt,#wwt:hover ,#battleships, #battleships:hover, #lego, #lego:hover {
+    background-size: 15rem 15rem;
+}
+
+    .flex-container-about {
+        height: auto;
+    }
+
+}
