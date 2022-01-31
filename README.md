@@ -1,3 +1,3 @@
 # larkin.ie
 
-GitHub repository for personal websites
+GitHub repository for personal website
