@@ -35,16 +35,11 @@ body {
 .navbar {
     overflow: hidden;
     background-color: var(--color-white);
-    position: fixed;
-    /* Set the navbar to fixed position */
-    top: 0;
-    /* Position the navbar at the top of the page */
-    /* width */
-    width: 100%;
-    /* Full width */
-    z-index: 999;
-    /* Setting navbar to be always on top */
-    line-height: 7.5vh;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 999;  /* Setting navbar to be always on top */
+    line-height: 7.5vh; /* navbar height */
 }
 
 
@@ -52,14 +47,11 @@ body {
 .logo {
     padding-left: 12.5vw;
     font-size: 2rem;
-    --float: right;
-    /* Floating the parent element right */
     color: var(--color-blue);
 }
 
 .logo li {
-    float: left;
-    /* Floating the links in order */
+    float: left; /* Floating the links in order */
     list-style-type: none;
     margin-right: 2rem;
 }
@@ -68,10 +60,8 @@ body {
 /* Targeting descendent links of the menu id */
 .logo a,
 .credits a {
-    text-decoration: none;
-    /* removing the   for hyperlinks */
-    color: inherit;
-    /* Links will inherit the color from the closest parent; in this case body */
+    text-decoration: none; /* removing the   for hyperlinks */
+    color: inherit;  /* Links will inherit the color from the closest parent; in this case body */
 }
 
 
