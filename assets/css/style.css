@@ -30,6 +30,15 @@ body {
     height: 100%
 }
 
+p {
+    font-size: 1.75rem;
+    color: var(--color-black);
+}
+
+p > a {
+    text-decoration: none; /* removing the   for hyperlinks */
+    color: var(--color-blue);  
+}
 
 /* Code for Navbar                                  */
 .navbar {
