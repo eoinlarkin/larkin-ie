@@ -36,20 +36,26 @@ p {
     padding-left: 0.5rem;
 }
 
-p > a {
-    text-decoration: none; /* removing the   for hyperlinks */
-    color: var(--color-blue);  
+p>a {
+    text-decoration: none;
+    /* removing the   for hyperlinks */
+    color: var(--color-blue);
 }
 
 /* Code for Navbar                                  */
 .navbar {
     overflow: hidden;
     background-color: var(--color-white);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 999;  /* Setting navbar to be always on top */
-    line-height: 7.5vh; /* navbar height */
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    z-index: 999;
+    /* Setting navbar to be always on top */
+    line-height: 7.5vh;
+    /* navbar height */
 }
 
 
@@ -61,7 +67,8 @@ p > a {
 }
 
 .logo li {
-    float: left; /* Floating the links in order */
+    float: left;
+    /* Floating the links in order */
     list-style-type: none;
     margin-right: 2rem;
 }
@@ -70,8 +77,10 @@ p > a {
 /* Targeting descendent links of the menu id */
 .logo a,
 .credits a {
-    text-decoration: none; /* removing the   for hyperlinks */
-    color: inherit;  /* Links will inherit the color from the closest parent; in this case body */
+    text-decoration: none;
+    /* removing the   for hyperlinks */
+    color: inherit;
+    /* Links will inherit the color from the closest parent; in this case body */
 }
 
 
@@ -448,44 +457,51 @@ p > a {
 
 
 @media screen and (max-width: 1200px) {
-.flex-item-portfolio p {
-    font-size: 1.5rem;
-}
+    .flex-item-portfolio p {
+        font-size: 1.5rem;
+    }
 
-#msg, #msg:hover,#wwt,#wwt:hover ,#battleships, #battleships:hover, #lego, #lego:hover {
-    background-size: 20vh 20vh;
-  }
+    #msg,
+    #msg:hover,
+    #wwt,
+    #wwt:hover,
+    #battleships,
+    #battleships:hover,
+    #lego,
+    #lego:hover {
+        background-size: 20vh 20vh;
+    }
 
-  .flex-item-portfolio span {
-    height: 20vh;
-}
+    .flex-item-portfolio span {
+        height: 20vh;
+    }
 
-.portfolio-images {
-    height: 20vh;
-    width: 20vh;
-}
+    .portfolio-images {
+        height: 20vh;
+        width: 20vh;
+    }
 
 }
 
 @media screen and (max-width: 1024px) {
-        .flex-container-portfolio {
-            height: auto !important;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-    
-        .flex-item-portfolio {
-          min-width: 100% !important;
-        }
+    .flex-container-portfolio {
+        height: auto !important;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
-        .flex-container-about {
-            gap: 10vh 10vh !important;
-        }
+    .flex-item-portfolio {
+        min-width: 100% !important;
+    }
 
-        .flex-item-about {
-            min-width: 100% !important;
-            height: 45% !important;
-          }
+    .flex-container-about {
+        gap: 10vh 10vh !important;
+    }
+
+    .flex-item-about {
+        min-width: 100% !important;
+        height: 45% !important;
+    }
 
 
 }
@@ -494,14 +510,14 @@ p > a {
 @media screen and (max-width: 600px) {
     .flex-item-about {
         min-width: 100% !important;
-        height: 45% !important;  
-      }
+        height: 45% !important;
+    }
 
-      .flex-item-about > p {
-        font-size: 1.5rem;          
-      }
+    .flex-item-about>p {
+        font-size: 1.5rem;
+    }
 
-      .logos img {
+    .logos img {
         width: 60px;
         height: 60px;
     }
@@ -509,50 +525,58 @@ p > a {
 
     .container {
         gap: 2rem 2rem;
-    }    
+    }
 
-  }
-
-
-  @media screen and (max-width: 450px) {
-
-  .container {
-    gap: 1rem 2rem;
-    grid-template-areas: 
-    "logo1 logo2"
-    "logo3 logo4"
-    "logo5 logo6"
-    "logo7 logo8"!important;
 }
 
-.logos img {
-    width: 60px;
-    height: 60px;
-}
 
-.portfolio-images {
-    width: 15rem;
-    height: 15rem;
-}
+@media screen and (max-width: 450px) {
 
-.img-left, .img-right{
-    float: none;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
-}
+    .container {
+        gap: 1rem 2rem;
+        grid-template-areas:
+            "logo1 logo2"
+            "logo3 logo4"
+            "logo5 logo6"
+            "logo7 logo8" !important;
+    }
 
-.flex-item-portfolio:nth-child(n) {
-    height:auto;
-}
+    .logos img {
+        width: 60px;
+        height: 60px;
+    }
 
-.flex-item-portfolio span {
-    height:auto;
-}
+    .portfolio-images {
+        width: 15rem;
+        height: 15rem;
+    }
 
-#msg, #msg:hover,#wwt,#wwt:hover ,#battleships, #battleships:hover, #lego, #lego:hover {
-    background-size: 15rem 15rem;
-}
+    .img-left,
+    .img-right {
+        float: none;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .flex-item-portfolio:nth-child(n) {
+        height: auto;
+    }
+
+    .flex-item-portfolio span {
+        height: auto;
+    }
+
+    #msg,
+    #msg:hover,
+    #wwt,
+    #wwt:hover,
+    #battleships,
+    #battleships:hover,
+    #lego,
+    #lego:hover {
+        background-size: 15rem 15rem;
+    }
 
     .flex-container-about {
         height: auto;
