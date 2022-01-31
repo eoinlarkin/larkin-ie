@@ -144,7 +144,7 @@ p>a {
 /* Place text in the middle of the image */
 .hero-text {
     position: absolute;
-    top: 80%;
+    top: 55%;
     left: 7.5vw;
     color: var(--color-black);
     font-family: 'Space Mono';
