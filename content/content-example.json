@@ -1,0 +1,87 @@
+{
+  "meta": [
+    {"site-title": "Site Title",
+    "top-header": "Main Header",
+    "google-analtics-tag": ""
+  }], 
+  "about": [
+    {
+      "about_text": "About Text Here"
+    }
+  ],
+  "links": [
+    {
+      "name": "github",
+      "link": "https://github.com/",
+      "css": "fa-brands fa-github"
+    },
+    {
+      "name": "linkedin",
+      "link": "https://www.linkedin.com/",
+      "css": "fa-brands fa-linkedin"
+    },
+
+    {
+      "name": "strava",
+      "link": "https://www.strava.com/",
+      "css": "fa-brands fa-strava"
+    },
+
+    {
+      "name": "instagram",
+      "link": "https://www.instagram.com/",
+      "css": "fa-brands fa-instagram"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Project 1",
+      "link_html": "<a href='https://example.com' target='_blank'>Project 1 <i class='fa-solid fa-arrow-up-right-from-square'></i>: </a>",
+      "description": "Project Description"
+    }
+  ],
+
+  "tools": [
+    {
+      "name": "linux",
+      "css": "<iconify-icon icon='flat-color-icons:linux'></iconify-icon>"
+    },
+    {
+      "name": "python",
+      "css": "<iconify-icon icon='logos:python'></iconify-icon>"
+    },
+    {
+      "name": "javascript",
+      "css": "<iconify-icon icon='logos:javascript'></iconify-icon>"
+    },
+    {
+      "name": "r",
+      "css": "<iconify-icon icon='logos:r-lang'></iconify-icon>"
+    },
+    {
+      "name": "c++",
+      "css": "<iconify-icon icon='logos:c-plusplus'></iconify-icon>"
+    },
+    {
+      "name": "tensorflow",
+      "css": " <iconify-icon icon='logos:tensorflow'></iconify-icon>"
+    },
+    {
+      "name": "bash",
+      "css": "<iconify-icon icon='logos:bash-icon'></iconify-icon>"
+    },
+    {
+      "name": "docker",
+      "css": "<iconify-icon icon='logos:docker-icon'></iconify-icon>"
+    },
+    {
+      "name": "flask",
+      "css": "<iconify-icon icon='simple-icons:flask'></iconify-icon>"
+    },
+    {
+      "name": "django",
+      "css": "<iconify-icon icon='vscode-icons:file-type-django'></iconify-icon>"
+    }
+  ]
+}

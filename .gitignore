@@ -1,2 +1,8 @@
 # Following files are ignored:
 workspace.code-workspace
+.vscode/
+__pycache__/
+venv/
+notes.md
+.gcloudignore
+content/content.json
