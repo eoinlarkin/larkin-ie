@@ -6,3 +6,5 @@ venv/
 notes.md
 .gcloudignore
 content/content.json
+node_modules/*
+package-lock.json

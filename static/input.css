@@ -20,18 +20,6 @@
   }
 }
 
-.right-1\/10{
-  right: 10%;
-}
-
-.right-1\/5{
-  right: 20% !important;;
-}
-
-.top-1\/20{
-  top: 5%;
-}
-
 /* Custom Style to animate darkmode toggle  */
 #dark-mode-toggle:checked+label .switch-ball {
   background-color: white;
